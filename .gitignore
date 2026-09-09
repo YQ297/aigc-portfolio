@@ -1,0 +1,9 @@
+dist/
+gf.css
+gf2.css
+*.py
+*.log
+*.bak
+__pycache__/
+_cdp_*.js
+_verify*.py
