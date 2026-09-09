@@ -349,6 +349,12 @@
   .flow .fstep{font-size:11.5px;letter-spacing:.5px;color:var(--text-dim);border:1px solid var(--border);background:var(--surface);padding:6px 13px;border-radius:999px;transition:.3s var(--ease)}
   .flow .fstep:hover{color:var(--pink);border-color:var(--pink)}
   .flow .farr{color:var(--pink);font-size:11px;opacity:.8}
+  .load-hint{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:22px;padding:10px 18px;border:1px dashed var(--border);border-radius:999px;width:max-content;max-width:100%;margin-left:auto;margin-right:auto;font-size:12px;letter-spacing:1px;color:var(--text-dim);background:rgba(255,158,196,.04)}
+  .load-hint .ld{width:6px;height:6px;border-radius:50%;background:var(--pink);animation:ldPulse 1.6s ease-in-out infinite}
+  .load-hint .ld:nth-child(2){animation-delay:.25s}
+  .load-hint .ld:nth-child(3){animation-delay:.5s}
+  @keyframes ldPulse{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+  .load-hint em{font-style:normal;color:var(--pink);opacity:.85}
   .contact{display:flex;flex-direction:column;gap:12px;margin-top:18px}
   .contact a{display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none;font-size:14px;padding:12px 16px;
     border:1.5px solid var(--border);border-radius:14px;background:var(--surface);transition:.3s var(--ease)}
@@ -756,6 +762,7 @@
         <span class="fstep">动态影像</span><span class="farr">→</span>
         <span class="fstep">商业落地</span>
       </div>
+      <div class="load-hint"><span class="ld"></span><span class="ld"></span><span class="ld"></span>作品内容加载缓慢，请您<em>耐心等待</em> ✦</div>
     </div>
     <div class="footer">© 2026 陈永清 · AIGC Portfolio <span class="hand">✦ made with love &amp; prompts</span></div>
   </section>
